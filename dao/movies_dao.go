@@ -56,6 +56,6 @@ func (m *MoviesDAO) Delete(movie Movie) error {
 
 // Update an existing movie
 func (m *MoviesDAO) Update(movie Movie) error {
-	err := db.C(COLLECTION).UpdateId(movie.ID, &movie)``
+	err := db.C(COLLECTION).UpdateId(movie.ID, &movie)
 	return err
 }
